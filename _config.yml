@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
+title: 无归
+subtitle: '春秋'
+description: '计算机类技术博客'
+keywords: 前端,js,vue,react,node,python,小程序,web
 author: 靓仔
 language: zh-CN
 timezone: ''
@@ -15,8 +15,8 @@ timezone: ''
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
 url: https://ssos.live
 root: /
-# permalink: :year/:month/:day/:title/
-permalink: :title.html
+permalink: :year/:month/:day/:title/
+# permalink: :title.html
 permalink_defaults:
 pretty_urls:
     trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
