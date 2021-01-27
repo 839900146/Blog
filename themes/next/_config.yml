@@ -872,6 +872,7 @@ canvas_ribbon:
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
 
+# Dependencies: https://github.com/tea3/hexo-related-popular-posts
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING SETTINGS
 #! UNLESS YOU KNOW WHAT YOU ARE DOING
@@ -934,8 +935,8 @@ vendors:
   pangu: https://cdn.bootcdn.net/ajax/libs/pangu/4.0.7/pangu.min.js
 
   # Quicklink
-  # quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
-  quicklink: https://cdn.bootcdn.net/ajax/libs/quicklink/2.0.0-beta/quicklink.umd.js
+  quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
+  # quicklink: https://cdn.bootcdn.net/ajax/libs/quicklink/2.0.0-beta/quicklink.umd.js
 
   # DisqusJS
   # disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js

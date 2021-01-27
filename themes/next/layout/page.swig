@@ -45,6 +45,7 @@
                 }
                 )
               }}
+              
             </div>
           </div>
         {% elif page.type === 'categories' %}

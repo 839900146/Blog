@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 无归
+title: 划水少年
 # subtitle: '春秋'
 description: '计算机类技术博客'
-keywords: 前端,js,vue,react,node,python,小程序,web
+keywords: '前端,js,vue,react,node,python,小程序,web'
 author: 靓仔
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -143,7 +143,7 @@ neat_css:
         - '**/*.min.css'
 # 压缩js
 neat_js:
-    enable: true
+    enable: false
     mangle: true
     output:
     compress:
@@ -153,10 +153,14 @@ neat_js:
         - '**/index.js'
         - '**/fireworks.js'
 
+nofollow:
+    enable: true
+    exclude:
+    
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-    type: git
-    repo: https://github.com/839900146/Blog.git
-    branch: master
-    # type: baidu_url_submit
+    # type: git
+    # repo: https://github.com/839900146/Blog.git
+    # branch: master
+    type: baidu_url_submit
