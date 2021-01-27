@@ -2,7 +2,7 @@
 title: 手写call
 date: 2021-01-26 10:28:30
 tags: [手写, js]
-categories: [笔试重点]
+categories: 前端
 ---
 
 ## ES5实现

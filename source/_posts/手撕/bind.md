@@ -2,7 +2,7 @@
 title: 手写bind
 date: 2021-01-26 10:27:49
 tags: [手写, js]
-categories: [笔试重点]
+categories: 前端
 ---
 
 ## bind代码实现

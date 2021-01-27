@@ -9,14 +9,14 @@ description: '计算机类技术博客'
 keywords: 前端,js,vue,react,node,python,小程序,web
 author: 靓仔
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
 url: https://ssos.live
 root: /
-permalink: :year/:month/:day/:title/
-# permalink: :title.html
+# permalink: :year/:title/
+permalink: :title/:hash/
 permalink_defaults:
 pretty_urls:
     trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -47,7 +47,7 @@ relative_link: false
 future: true
 highlight:
     enable: true
-    line_number: true
+    line_number: false
     auto_detect: true
     tab_replace: ''
     wrap: true
@@ -108,10 +108,50 @@ sitemap:
 baidusitemap:
     path: baidusitemap.xml
 
+baidu_url_submit:
+    count: 50 ## 比如3，代表提交最新的三个链接
+    host: ssos.live ## 在百度站长平台中注册的域名
+    token: Afg27GXBylaE29mG ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
+    path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+# Security
+encrypt: # hexo-blog-encrypt
+    abstract: 本页已被加密，需要密码才能访问
+    message: 请在此输入密码，按回车校验
+    tags:
+        - { name: encryptAsDiary, password: passwordA }
+        - { name: encryptAsTips, password: passwordB }
+    theme: up
+    wrong_pass_message: 密码错误，请重试
+    wrong_hash_message: 此时，一位靓仔偶然路过
+
+# 博文压缩
+neat_enable: true
+# 压缩html
+neat_html:
+    enable: true
+    exclude:
+# 压缩css
+neat_css:
+    enable: true
+    exclude:
+        - '**/*.min.css'
+# 压缩js
+neat_js:
+    enable: true
+    mangle: true
+    output:
+    compress:
+    exclude:
+        - '**/*.min.js'
+        - '**/jquery.fancybox.pack.js'
+        - '**/index.js'
+        - '**/fireworks.js'
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -119,3 +159,4 @@ deploy:
     type: git
     repo: https://github.com/839900146/Blog.git
     branch: master
+    # type: baidu_url_submit

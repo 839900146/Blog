@@ -2,7 +2,7 @@
 title: 手写instanceof
 date: 2021-01-26 10:32:10
 tags: [手写, js]
-categories: [笔试重点]
+categories: 前端
 ---
 
 

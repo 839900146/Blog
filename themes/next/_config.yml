@@ -120,8 +120,9 @@ menu:
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
-  #schedule: /schedule/ || fa fa-calendar
-  #sitemap: /sitemap.xml || fa fa-sitemap
+  # photos: /photos/ || fa fa-image
+  # schedule: /schedule/ || fa fa-calendar
+  # sitemap: /sitemap.xml || fa fa-sitemap
   # commonweal: /404/ || fa fa-heartbeat
 
 # Enable / Disable menu icons / item badges.
@@ -194,12 +195,21 @@ social_icons:
 # Blog rolls
 links_settings:
   icon: fa fa-link
-  title: Links
+  title: 友情链接
   # Available values: block | inline
-  layout: block
+  layout: inline
 
 links:
-  #Title: http://yoursite.com
+  bilibili: https://www.bilibili.com/
+  iconfont: https://www.iconfont.cn/
+  leetcode: https://leetcode-cn.com/problemset/all/
+  掘金: https://juejin.cn/
+  csdn: https://www.csdn.net/
+  图床: https://imgchr.com/
+  it熊猫: https://www.itpanda.net/book/
+
+passage_end_tag:
+  enabled: true
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
@@ -323,7 +333,7 @@ tagcloud:
 # Google Calendar
 # Share your recent schedule to others via calendar page.
 calendar:
-  calendar_id: <required> # Your Google account E-Mail
+  calendar_id: 839900146@qq.com # Your Google account E-Mail
   api_key: <required>
   orderBy: startTime
   offsetMax: 24 # Time Range
@@ -355,7 +365,7 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: galactic
+  highlight_theme: normal
   # Add copy button on codeblock
   copy_button:
     enable: true
@@ -363,7 +373,6 @@ codeblock:
     show_result: true
     # Available values: default | flat | mac
     style: flat
-
 back2top:
   enable: true
   # Back to top in sidebar.
@@ -534,12 +543,12 @@ pangu: false
 # For more information: https://github.com/GoogleChromeLabs/quicklink
 # Front-matter (unsupport home archive).
 quicklink:
-  enable: false
+  enable: true
 
   # Home page and archive page can be controlled through home and archive options below.
   # This configuration item is independent of `enable`.
-  home: false
-  archive: false
+  home: true
+  archive: true
 
   # Default (true) will initialize quicklink after the load event fires.
   delay: true
@@ -607,19 +616,19 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
-  notify: false # Mail notifier
-  verify: false # Verification code
-  placeholder: Just go go # Comment box placeholder
+  enable: true
+  appid: qHL1j3cAa3u9K0wUDhEcWBwo-gzGzoHsz # Your leancloud application appid
+  appkey: kkP99ciMxfMpsnTCo3qI7Pzm # Your leancloud application appkey
+  notify: true # Mail notifier
+  verify: true # Verification code
+  placeholder: 阁下，请留下你的足迹 # Comment box placeholder
   avatar: mm # Gravatar style
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
-  language: # Language, available values: en, zh-cn
+  language: zh-cn # Language, available values: en, zh-cn
   visitor: false # Article reading statistic
-  comment_count: true # If false, comment count will only be displayed in post page, not in home page
-  recordIP: false # Whether to record the commenter IP
+  comment_count: false # If false, comment count will only be displayed in post page, not in home page
+  recordIP: true # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   #post_meta_order: 0
 

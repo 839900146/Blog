@@ -2,7 +2,7 @@
 title: 手写splice
 date: 2021-01-26 10:25:54
 tags: [手写, js]
-categories: [笔试重点]
+categories: 前端
 ---
 
 ## 代码实现
