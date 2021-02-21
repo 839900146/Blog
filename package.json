@@ -8,7 +8,7 @@
     "serve": "yarn clean && hexo server",
     "dev": "yarn serve",
     "clean": "hexo clean",
-    "push": "git add . && git commit -m '自动部署' && git push origin dev"
+    "push": "git add . && git commit -m 自动部署 && git push origin dev"
   },
   "hexo": {
     "version": "5.3.0"
