@@ -131,5 +131,47 @@
 }
 
 .v[data-class=v] .vwrap .vheader .vinput:focus {
-    border-bottom-color: #929298 !important;
+  border-bottom-color: #929298 !important;
+}
+
+h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
+  position: relative;
+  margin-top: 50px;
+  padding: 4px 0 4px 12px;
+}
+
+h1[id]:before, h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before, h6[id]:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  border-left-width: 4px;
+  border-left-style: solid;
+  height: 45%;
+  transform: translateY(-50%);
+}
+
+h1[id]:before {
+  border-color: #f44336;
+}
+
+h2[id]:before {
+  border-color: #66b1ff;
+}
+
+h3[id]:before {
+  border-color: #4ac953;
+}
+
+h4[id]:before {
+  border-color: #9c27b0;
+}
+
+h5[id]:before {
+  border-color: #ffeb3b;
+}
+
+h6[id]:before {
+  border-color: #9e9e9e;
 }
