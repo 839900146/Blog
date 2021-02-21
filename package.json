@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "yarn clean && hexo generate",
+    "build": "yarn clean && hexo generate && node compress",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "yarn clean && hexo server"
@@ -30,6 +30,9 @@
     "hexo-theme-landscape": "^0.0.3"
   },
   "devDependencies": {
+    "axios": "^0.21.1",
+    "compressing": "^1.5.1",
+    "form-data": "^4.0.0",
     "hexo-autonofollow": "^1.0.1",
     "hexo-baidu-url-submit": "^0.0.6",
     "hexo-neat": "^1.0.9",
