@@ -163,4 +163,4 @@ deploy:
     # type: git
     # repo: https://github.com/839900146/Blog.git
     # branch: master
-    type: baidu_url_submit
+    # type: baidu_url_submit
