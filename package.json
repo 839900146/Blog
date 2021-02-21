@@ -1,12 +1,14 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "ssos-live-blog",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "yarn clean && hexo generate && node compress",
+    "deploy": "yarn clean && hexo generate && node deploy",
+    "build": "yarn clean && hexo generate",
+    "serve": "yarn clean && hexo server",
+    "dev": "yarn serve",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "yarn clean && hexo server"
+    "push": "git add . && git commit -m '自动部署' && git push origin dev"
   },
   "hexo": {
     "version": "5.3.0"
