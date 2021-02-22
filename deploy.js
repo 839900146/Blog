@@ -29,7 +29,7 @@ function uploadFile(filepath) {
 
     const headers = form.getHeaders();
 
-    console.log('开始部署至服务器');
+    console.log('2 --- 开始部署至服务器');
 
     axios.post(remoteServer, form, {
         headers,
@@ -43,10 +43,10 @@ function uploadFile(filepath) {
         }
     }).then(res => {
         if (res.data.code === 200 && res.data.state === true) {
-            console.log('博客已成功部署至服务器');
+            console.log('3 --- 博客已成功部署至服务器');
             fs.unlinkSync(filepath);
-            console.log('已删除blog.zip');
-            console.log('已删除public');
+            console.log('4 --- 已删除blog.zip');
+            console.log('5 --- 已删除public');
         } else {
             console.log(`博客更新失败，${res.data.message}`);
         }
@@ -56,6 +56,6 @@ function uploadFile(filepath) {
 // 调用压缩
 zipFile(path.join(__dirname, 'public'), path.join(__dirname, 'blog'), function (err) {
     if (err) throw err;
-    console.log('blog.zip 压缩成功');
+    console.log('1 --- blog.zip 压缩成功');
     uploadFile(path.join(__dirname, 'blog.zip'));
 }, true)
