@@ -35,6 +35,7 @@ function uploadFile(filepath) {
         if (res.data.code === 200 && res.data.state === true) {
             console.log('博客已成功部署至服务器');
             fs.unlinkSync(filepath);
+            console.log('已删除blog.zip');
         } else {
             console.log(`博客更新失败，${res.data.message}`);
         }
