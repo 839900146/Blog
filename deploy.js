@@ -38,7 +38,7 @@ function uploadFile(filepath) {
             // 使用本地 progress 事件
             if (e.lengthComputable) {
                 let progress = loaded / total * 100;
-                console.log(progress);
+                console.log('-----------------------------',progress);
             }
         }
     }).then(res => {
